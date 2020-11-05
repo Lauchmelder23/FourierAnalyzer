@@ -2,7 +2,7 @@
 
 struct SDL_Renderer;
 struct SDL_Texture;
-struct SDL_Rect { int x, y, w, h };
+struct SDL_Rect;
 
 class Screen
 {
@@ -14,6 +14,6 @@ public:
 	virtual void Render(SDL_Renderer* renderer) = 0;
 
 protected:
-	SDL_Rect screenSpace;
+	SDL_Rect* screenSpace;
 	SDL_Texture* texture;
 };
