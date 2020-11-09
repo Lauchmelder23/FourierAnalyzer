@@ -14,7 +14,7 @@ void DummyScreen::Update()
 void DummyScreen::Render(SDL_Renderer* renderer)
 {
 	SDL_SetRenderTarget(renderer, texture);
-	SDL_SetRenderDrawColor(renderer, 20, 40, 210, 255);
+	SDL_SetRenderDrawColor(renderer, 120, 120, 120, 255);
 	SDL_RenderClear(renderer);
 
 	SDL_SetRenderTarget(renderer, NULL);

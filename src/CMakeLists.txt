@@ -1,7 +1,7 @@
 add_executable(fourier
 	"main.cpp"
 	"RenderWindow.cpp"
-  "Screen.cpp" "screens/DummyScreen.cpp")
+  "Screen.cpp" "screens/DummyScreen.cpp" "screens/PlotScreen.cpp" "Signal.cpp")
 
 target_include_directories(fourier PRIVATE
 	${CMAKE_SOURCE_DIR}/include
